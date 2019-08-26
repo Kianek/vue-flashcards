@@ -14,6 +14,7 @@
         <v-btn
           class="mb-2"
           block
+          color="primary"
           depressed
           @click="showHint = !showHint"
           v-if="!flipped && hint"
@@ -43,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .flash-card {
-  height: 275px;
+  height: 250px;
   width: 350px;
   perspective: 1000px;
 }
@@ -70,16 +71,4 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
-// .back {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   backface-visibility: hidden;
-//   transform: rotateY(180deg);
-// }
-
-// .flip-card {
-//   transform: rotateY(180deg);
-// }
 </style>
